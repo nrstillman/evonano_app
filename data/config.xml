@@ -1,0 +1,91 @@
+<input name="wmxd_chamber">
+  <category name="general"> 
+    <data name="N_cells">23</data>
+    <data name="N_types">4</data>
+    <data name="N_prtcl_types">2</data>
+    <data name="N_CC">8</data>
+    <data name="N_CSC">0</data>
+    <data name="N_VC">1</data>
+    <data name="output_file">testing</data>
+    <data name="NT">10000</data>
+    <data name="t_final">172800</data>
+    <data name="maxp">1.2e5</data>
+  </category>
+
+  <category name="opt">
+    <option name="optimise">0</option>
+    <option name="multi_core">0</option>
+    <option name="visualise">0</option>
+    <option name="N_runs">5</option>
+    <option name="scenario">wmxd</option>
+    <option name="tissue">CSC_and_CC.p</option>
+    <option name="section">0</option>
+  </category>
+
+  <cell name="VC"> 
+    <data name="type">VC</data>
+    <data name="N_cell">20</data>
+    <data name="N_prtcl">1</data>
+    <data name="NR">0</data>
+    <data name="S">10e-6</data>
+    <particle name="P0">
+        <data name="D">1e-12</data>
+        <data name="k_a">100000.0</data>
+        <data name="k_d">1e-4</data>
+        <data name="k_i">1e-5</data>
+        <data name="NP0">10</data>
+        <data name="NP_max">600</data>
+        <data name="T">172800</data>
+    </particle>
+
+  </cell>
+  
+  <cell name="CC">
+    <data name="type">CC</data>
+    <data name="N_cell">0</data>
+    <data name="N_prtcl">2</data>
+    <data name="NR">1e5</data>
+    <data name="S">10e-6</data>
+    <particle name="P0">
+        <data name="D">1e-12</data>
+        <data name="k_a">100000.0</data>
+        <data name="k_d">0.0001</data>
+        <data name="k_i">1e-5</data>
+        <data name="NP_max">100</data>
+    </particle>
+
+  </cell>
+
+  <cell name="HC"> 
+    <data name="type">HC</data>
+    <data name="N_cell">2</data>
+    <data name="N_prtcl">2</data>
+    <data name="NR">0</data>
+    <data name="S">10e-6</data>
+    <particle name="P0">
+        <data name="D">1e-14</data>
+        <data name="k_a">0</data>
+        <data name="k_d">0.0001</data>
+        <data name="k_i">0</data>
+        <data name="NP_max">1000000</data>
+    </particle>
+
+  </cell>
+  
+  <cell name="CSC">
+    <data name="type">CSC</data>
+    <data name="N_cell">0</data>
+    <data name="N_prtcl">2</data>
+    <data name="NR">1e5</data>
+    <data name="S">10e-6</data>
+    <particle name="P0">
+        <data name="D">1e-14</data>
+        <data name="k_a">527099.8655051544</data>
+        <data name="k_d">0.0001</data>
+        <data name="k_i">1e-5</data>
+        <data name="NP_max">10000000</data>
+    </particle>
+
+  </cell>
+
+</input>
